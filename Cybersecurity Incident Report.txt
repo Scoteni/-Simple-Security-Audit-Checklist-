@@ -1,0 +1,31 @@
+Cybersecurity Incident Report
+Summary of the Problem
+The tcpdump log reveals that a DNS (Domain Name System) resolution failure occurred when attempting to access www.yummyrecipesforme.com. The log shows:
+
+A UDP packet (DNS query) was sent to the DNS server (203.0.113.2) on port 53 to resolve the domain name.
+
+The server responded with an ICMP error message: "udp port 53 unreachable", indicating that the DNS service was not available.
+
+Three attempts were made, but all failed with the same error.
+
+Analysis & Possible Cause
+Affected Protocol: DNS (UDP port 53)
+
+The DNS server did not respond to UDP requests, preventing domain resolution.
+
+The ICMP error confirms that the DNS service was unreachable.
+
+Possible Cause:
+
+DNS Server Misconfiguration (e.g., DNS service not running on port 53).
+
+Firewall Blocking UDP/53 (preventing DNS queries from reaching the server).
+
+Network Outage (DNS server may be down or unreachable).
+
+Next Steps
+Verify if the DNS service is running on the server.
+
+Check firewall rules to ensure UDP/53 is not blocked.
+
+Confirm network connectivity between the client and DNS server.
