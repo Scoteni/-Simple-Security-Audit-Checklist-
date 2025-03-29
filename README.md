@@ -1,5 +1,5 @@
-# -Simple-Security-Audit-Checklist-
-*(For Home Networks, Small Businesses &amp; Beginners)*  
+# 🔍 Botium Toys Internal Security Audit Checklist
+*Based on NIST CSF Framework - For Compliance & Risk Mitigation*  
 
 ## 🔍 **1. Inventory & Scope**  
 - [ ] List all devices (computers, phones, IoT gadgets).  
