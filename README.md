@@ -1,9 +1,5 @@
 # -Simple-Security-Audit-Checklist-
 *(For Home Networks, Small Businesses &amp; Beginners)*  
-# 🛡️ Simple Security Audit Checklist  
-*(For Home Networks, Small Businesses & Beginners)*  
-
----
 
 ## 🔍 **1. Inventory & Scope**  
 - [ ] List all devices (computers, phones, IoT gadgets).  
