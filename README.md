@@ -1,73 +1,67 @@
 # 🔍 Botium Toys Internal Security Audit Checklist
 *Based on NIST CSF Framework - For Compliance & Risk Mitigation*  
 
-## 🔍 **1. Inventory & Scope**  
-- [ ] List all devices (computers, phones, IoT gadgets).  
-- [ ] Identify critical data (customer info, financial files).  
-- [ ] Note who has access (employees, family members).  
+---
 
-> 💡 *"You can’t protect what you don’t know exists!"*  
+## 🎯 **Audit Scope**  
+*Aligned with IT Manager's Goals*  
+- [ ] Review current security posture for online payment systems  
+- [ ] Assess GDPR compliance for EU customer data  
+- [ ] Evaluate physical/digital asset protection  
+- [ ] Identify risks affecting business continuity  
 
 ---
 
-## 🛠️ **2. Basic Vulnerability Checks**  
-### 🔑 **Passwords**  
-- [ ] Changed default passwords (e.g., "admin/admin")?  
-- [ ] Enforced **strong passwords** (12+ chars, mixed symbols)?  
-- [ ] Enabled **2FA** (Google Authenticator/Authy)?  
+## 🛡️ **Controls Assessment**  
+*(Answer Yes/No for each)*  
 
-### 🔄 **Software Updates**  
-- [ ] Updated OS (Windows/macOS/Linux)?  
-- [ ] Updated apps (browsers, Zoom, Adobe)?  
-- [ ] Enabled auto-updates where possible?  
+### **Access Controls**  
+- [ ] Are employee roles assigned least-privilege access?  
+- [ ] Is multi-factor authentication (MFA) enforced for admin accounts?  
+- [ ] Are password policies requiring 12+ characters with special symbols?  
 
-### 🚪 **Open Ports**  
-- [ ] Scanned for open ports (use `nmap -sV your-IP`)?  
-- [ ] Closed unused ports in router/firewall?  
+### **Data Protection**  
+- [ ] Is customer payment data encrypted in transit and at rest?  
+- [ ] Are GDPR data subject rights (erasure/access) implemented?  
+- [ ] Are regular backups tested for recoverability?  
 
----
+### **Network Security**  
+- [ ] Is firewall configured to restrict unnecessary inbound/outbound traffic?  
+- [ ] Are all IoT devices (e.g., warehouse scanners) on a separate VLAN?  
+- [ ] Is remote access limited to VPN with MFA?  
 
-## 🚨 **3. Attack Vectors**  
-### 📧 **Phishing Risk**  
-- [ ] Tested staff with fake phishing email?  
-- [ ] Trained team to spot suspicious links?  
-
-### 💾 **Backups**  
-- [ ] Backups running? Tested restoring a file?  
-- [ ] Follow **3-2-1 rule** (3 copies, 2 media types, 1 offsite)?  
-
-### 📶 **Wi-Fi Security**  
-- [ ] Using **WPA3** or **WPA2**? (Never WEP!)  
-- [ ] Changed default SSID (e.g., not "HomeWiFi")?  
+### **Physical Security**  
+- [ ] Is server room access restricted to authorized personnel?  
+- [ ] Are surveillance cameras monitoring inventory storage?  
 
 ---
 
-## 📝 **4. Risk Assessment**  
-| **Issue**         | ✅ Fixed? | **Action Taken**               |  
-|-------------------|----------|--------------------------------|  
-| Weak passwords    | [ ]      | Enabled 2FA + password manager |  
-| Outdated software | [ ]      | Scheduled auto-updates         |  
-| No backups        | [ ]      | Set up cloud/local backups     |  
+## 📜 **Compliance Checklist**  
+*(Answer Yes/No for each)*  
+
+- [ ] **PCI-DSS**: Are online payment systems PCI-compliant?  
+- [ ] **GDPR**: Is EU customer data processing documented in a RoPA?  
+- [ ] **State Laws**: Are U.S. consumer protection laws followed?  
 
 ---
 
-## 📢 **5. Immediate Next Steps**  
-- [ ] **Enable 2FA** on critical accounts (email, banking).  
-- [ ] **Schedule backups** (Google Drive, external HDD).  
-- [ ] **Train staff/family** on phishing (free tools: [CanIPhish](https://www.caniphish.com/)).  
+## 💡 **Recommendations for IT Manager**  
+*(Optional but valuable for portfolio)*  
+1. **Critical**: Implement automated vulnerability scanning for e-commerce systems  
+2. **High Priority**: Conduct GDPR staff training for data handling procedures  
+3. **Medium**: Segment network to isolate payment processing systems  
 
 ---
 
-## 🔄 **Maintenance Plan**  
-- [ ] **Monthly:** Scan ports + check updates.  
-- [ ] **Quarterly:** Test backups + re-train staff.  
-- [ ] **Yearly:** Full re-audit.  
+## 📊 **Self-Assessment Guide**  
+*Use this to score your work (4/5 needed to pass):*  
+
+1. [ ] Reviewed scope/goals/risk assessment report  
+2. [ ] Considered risks to customers/employees/assets  
+3. [ ] Referenced control categories document  
+4. [ ] Answered Yes/No for all controls  
+5. [ ] Answered Yes/No for all compliance items  
 
 ---
 
-### 🎯 **Why This Works?**  
-- ✅ **Fast**: 1-2 hours for small setups.  
-- ✅ **No jargon**: Clear, actionable steps.  
-- ✅ **Scalable**: Add advanced checks later.  
 
-**🔗 Share this checklist with your team/family!**  
